@@ -1,0 +1,72 @@
+export const projects = [
+  {
+    id: 1,
+    title: 'HealVerse (Online HealthCare Management System)',
+    description: 'An end-to-end healthcare automation platform using MVC architecture to digitize and streamline clinical workflows, reducing manual paperwork by 70% and improving operational efficiency for both patients and healthcare providers.',
+    tags: ['React', 'Node.js', 'MySQL'],
+    category: 'Web',
+    // github: 'https://github.com/yourusername/nimbus',
+    demo: 'https://healthcare-management-zjiy.vercel.app/',
+  },  
+  {
+    id: 2,
+    title: 'FlasHive - An E-Commerce Platform',
+    description: 'A full-featured web application using MERN Stack, specializing in time-sensitive flash sales and promotional deals to drive customer engagement and accelerate purchase decisions, achieving 40% faster checkout conversion rates',
+    // image: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200&auto=format&fit=crop',
+    tags: ['React', 'Node.js', 'TailwindCSS'],
+    category: 'Web',
+    github: 'https://github.com/mmaryamhassan/FlasHive/tree/devv_maryiam',
+    // demo: 'https://orbit-demo.example.com',
+  },
+  {
+    id: 3,
+    title: 'Money Tracker App',
+    description: 'A simple and efficient Money Tracking App that helps you manage your finances, track expenses, monitor income, and stay in control of your budget. Once you add your income and expenses, it categorize transactions, monitors balance and analyze spending habits',
+    // image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop',
+    tags: ['Next.js', 'Stripe', 'MongoDB'],
+    category: 'Web',
+    github: 'https://github.com/mmaryamhassan/MoneyTrackerApp',
+    // demo: 'https://lumen-demo.example.com',
+  },
+  {
+    id: 4,
+    title: 'FoodLens - A food sharing mobile app',
+    description: "A mobile based UI/UX platform where food donors can post surplus food listings with details  kit for donating excess meals to the needy one. ",
+    // image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop',
+    tags: ['UI', 'UX', 'Figma'],
+    category: 'UI/UX',
+    // github: 'https://github.com/yourusername/palette',
+    demo: 'https://www.figma.com/proto/uZM1suACVjlR5ZDpAsOTog/HCI-FoodLens?node-id=23-354&p=f&t=W8WSIi8V7HWhaph3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=23%3A354&show-proto-sidebar=1',
+  },
+  {
+    id: 5,
+    title: 'SnapBooth',
+    description: 'A fun and aesthetic web-based camera app built with React that lets users capture photos with live filters, countdown effects, and a snap gallery, all directly from the browser.',
+    // image: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1200&auto=format&fit=crop',
+    tags: ['React', 'UI', 'Aesthetics', 'Webcam'],
+    category: ['Web', 'UI/UX'],
+    github: 'https://github.com/mmaryamhassan/snap_booth',
+    demo: 'https://snapbooth-mauve.vercel.app/',
+  },
+  {
+    id: 6,
+    title: 'ML Projects',
+    description: 'A minimal and academic based repo hving projects to implement ML algorithms into real-world scenarios. Built to reinforce theoretical foundations  with clean, well-documented code over black-box library usage.',
+    // image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop',
+    tags: ['ML', 'Python', 'Colab'],
+    category: 'AI/ML',
+    github: 'https://github.com/mmaryamhassan/practical-ML-projects',
+    // demo: 'https://frame-demo.example.com',
+  },
+  {
+    id: 7,
+    title: 'FamAgent - Agent responding messages',
+    description: 'A lightweight WhatsApp automation agent built which listens for incoming messages and can automatically reply based on custom logic. ',
+    tags: ['AI', 'Agent', 'Python'],
+    category: 'Agentic AI',
+    github: 'https://github.com/mmaryamhassan/FamAgent'
+
+  },
+];
+
+export const projectFilters = ['All', 'Web', 'UI/UX', 'AI/ML', 'Agentic AI'];

@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #FFF9FC;
+  color: #1A1A1A;
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+html.dark body {
+  background-color: #0F0B14;
+  color: #F5F5F5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+}
+
+::selection {
+  background: #D946EF;
+  color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #C026D3, #EC4899);
+  border-radius: 999px;
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/60 dark:bg-surface-cardDark/60 backdrop-blur-xl border border-white/30 dark:border-white/10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-brand bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-x;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-white
+    bg-gradient-brand bg-[length:200%_auto] shadow-glow-sm transition-all duration-300
+    hover:bg-[position:100%_0] hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply relative inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold
+    border border-primary-magenta/40 text-ink-light dark:text-ink-dark
+    transition-all duration-300 hover:border-primary-magenta hover:-translate-y-0.5
+    hover:shadow-glow-sm active:translate-y-0;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-5 sm:px-8 lg:px-10;
+  }
+
+  .section-eyebrow {
+    @apply text-sm font-semibold tracking-[0.2em] uppercase gradient-text;
+  }
+
+  .card-glass {
+    @apply rounded-3xl border border-black/5 dark:border-white/10 bg-surface-cardLight dark:bg-surface-cardDark
+    shadow-card transition-all duration-300;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
