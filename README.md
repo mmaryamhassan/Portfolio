@@ -1,6 +1,6 @@
 # Maryam Hassan — Software Developer Portfolio
 
-# Link
+## Link
 
 
 
@@ -15,4 +15,4 @@ npm run dev       # start local dev server
 
 React 18 · Vite · Tailwind CSS · Framer Motion · React Icons · Lucide React ·
 React Type Animation · React Scroll · React Helmet Async · EmailJS · React Hot Toast ·
-Lenis (smooth scroll) · React Snowfall (optional)
+Lenis · React Snowfall 
